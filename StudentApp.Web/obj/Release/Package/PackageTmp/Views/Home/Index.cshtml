@@ -1,0 +1,13 @@
+﻿@model IEnumerable<StudentApp.Data.Models.Student>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>My Student App</h1>
+    <div>
+        @*There are @Enumerable.Count(Model) of students in the database.*@
+        There are @Model.Count() students in the database.
+    </div>
+</div>
